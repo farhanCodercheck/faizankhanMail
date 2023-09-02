@@ -20,13 +20,13 @@ app.post('/send-email', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'k81183689@gmail.com',
-      pass: 'gokouybrxscmlvto',
+      user: 'fk796346@gmail.com',
+      pass: 'bkvxtkgmzyklwiox',
     },
   });
 
   const mailDetails = {
-    from: 'k81183689@gmail.com',
+    from: 'fk796346@gmail.com',
     to,
     subject,
     text,
@@ -43,7 +43,7 @@ app.post('/send-email', (req, res) => {
   });
 });
 
-app.listen(port, () => {
+app.listen(port, () => { 
   console.log(`Server is running on port ${port}`);
 });
 
